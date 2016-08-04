@@ -54,6 +54,8 @@ class SongsViewController: UIViewController, SongSelector {
         definesPresentationContext = true
         
         tableView.tableHeaderView = searchController?.searchBar
+        
+        title = "Press to View in AppStore"
     }
 
     override func didReceiveMemoryWarning() {

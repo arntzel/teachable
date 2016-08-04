@@ -31,7 +31,7 @@ class LastFMStore {
                             var songs: [Song] = []
                             for artist in artists {
                                 if let validArtist = artist as? NSDictionary {
-                                    songs.append(Song.new(validArtist as! [String : AnyObject]))
+                                    songs.append(Song(jsonData: validArtist as! [String : AnyObject]))
                                 }
                             }
                             success(songs: songs)

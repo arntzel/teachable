@@ -8,12 +8,6 @@
 
 import UIKit
 
-//Note to Natalia, the duration when requesting the top tracks does not return a valid value. It seems that the API is bugged.
-
-//I used AFNetworking to asyncronusly download the images for the cells.
-
-// Stable work environment: http://stackoverflow.com/questions/36402189/installing-cocoapods-on-os-x-el-capitan-error
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

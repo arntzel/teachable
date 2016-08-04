@@ -24,10 +24,7 @@ class SongsSearchResultsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("viewDidLoad")
-        print()
-        
+            
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     }
     
@@ -61,7 +58,6 @@ extension SongsSearchResultsController: UISearchResultsUpdating {
         if searchText.characters.count > 0 {
             filteredSongs = songs.filter{
                 $0.name!.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil}
-            print(filteredSongs)
         } else {
             filteredSongs = songs
         }
